@@ -1,5 +1,6 @@
 package com.tangbba.androidsampleproject.views;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
@@ -7,18 +8,22 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.tangbba.androidsampleproject.R;
 
-public class BottomSheetBasicActivity extends AppCompatActivity {
+public class BottomSheetBasicActivity extends Activity {
 
-    private BottomSheetBehavior mBottomSheetBehavior;
+    private AnchoredBottomSheetBehavior mBottomSheetBehavior;
     private View mBottomSheet;
     private View mCoverView;
 
     private int mPeekHeight;
+
+    final private DisplayMetrics mDisplayMetrics = new DisplayMetrics();
 
     public static Intent newIntent(Context context) {
         return new Intent(context, BottomSheetBasicActivity.class);
@@ -32,14 +37,15 @@ public class BottomSheetBasicActivity extends AppCompatActivity {
         mPeekHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 56.0f, getResources().getDisplayMetrics());
         mBottomSheet = findViewById(R.id.bottom_sheet);
         mCoverView = findViewById(R.id.cover_view);
-        mBottomSheetBehavior = BottomSheetBehavior.from(mBottomSheet);
-        mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+        mBottomSheetBehavior = AnchoredBottomSheetBehavior.from(mBottomSheet);
+        mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_ANCHORED);
         setupButtonEvent();
         setupBottomSheetEvent();
+
     }
 
     private void setupBottomSheetEvent() {
-        mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+        mBottomSheetBehavior.addBottomSheetCallback(new AnchoredBottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
 
@@ -56,19 +62,21 @@ public class BottomSheetBasicActivity extends AppCompatActivity {
         });
     }
 
+
+
     private void setupButtonEvent() {
 
         mCoverView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_COLLAPSED);
             }
         });
 
         findViewById(R.id.show_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_COLLAPSED);
             }
         });
 
@@ -76,7 +84,7 @@ public class BottomSheetBasicActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (mBottomSheetBehavior.isHideable()) {
-                    mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+                    mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_HIDDEN);
                 }
             }
         });
@@ -84,7 +92,14 @@ public class BottomSheetBasicActivity extends AppCompatActivity {
         findViewById(R.id.extend_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_EXPANDED);
+            }
+        });
+
+        findViewById(R.id.anchor_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_ANCHORED);
             }
         });
     }
