@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">AndroidSampleProject</string>
+    <string name="app_name">Auto Suggest Sample</string>
+    <string name="search_brand_hint">찾으시는 브랜드명을 입력해 주세요.</string>
 </resources>

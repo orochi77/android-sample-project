@@ -1,0 +1,294 @@
+{
+    "brands": [
+        {
+            "categoryName": "금융",
+            "brandName": "편한가계부",
+            "brandImageUrl": "https://lh3.googleusercontent.com/ijQ3b30ZHWkk-dzoJwY7kGV7IXQ7rciv5Bb68LrCWajCS5r8hrPut7U6dOmgmqPhRA"
+        },
+        {
+            "categoryName": "금융",
+            "brandName": "클머니가계부",
+            "brandImageUrl": "https://lh5.ggpht.com/NnZrVaHz_b-E_UyQp_xQzQ3UZF09mPquBN7aQavvVGC3iq5gUCwJx-N85nyGzGDianw"
+        },
+        {
+            "categoryName": "금융",
+            "brandName": "똑똑가계부",
+            "brandImageUrl": "https://lh3.googleusercontent.com/9B8iNL_XZikyfwFackFFlEzL4Xhc_9hg3pip6vhudHRGgomn6RzKFTDov9tHavp-slk"
+        },
+        {
+            "categoryName": "금융",
+            "brandName": "삼성카드",
+            "brandImageUrl": "https://lh3.googleusercontent.com/82UMpvrJgYVkOquzilz6K52_sy43uTlQnncHQrEldhNM5Dg3w1zr9rkKPrn4NIfCtA"
+        },
+        {
+            "categoryName": "금융",
+            "brandName": "KB국민은행 스타뱅킹",
+            "brandImageUrl": "https://lh5.ggpht.com/zq49EeppfaTjuMnBZE8P0N3__XnyDx4En_UTe1SLRSTt0x3hexju1bBFW83Rd67qYg"
+        },
+        {
+            "categoryName": "금융",
+            "brandName": "카카오뱅크",
+            "brandImageUrl": "https://lh3.googleusercontent.com/Yb8VGs8H6BrSFXH8qFtE1qtVSUL1c1JO0FIn_zZpXE-YnicVcTuN-AZnQULWzsoG9g"
+        },
+        {
+            "categoryName": "금융",
+            "brandName": "IBK기업은행",
+            "brandImageUrl": "https://lh3.googleusercontent.com/wrgphf1mknX_6jANYmeZVD1H2uRoXco1qFC5S7FqxZd8IgPfQk6c6BD-bZZY1EdfyiI"
+        },
+        {
+            "categoryName": "날씨",
+            "brandName": "실시간 날씨",
+            "brandImageUrl": "https://lh3.googleusercontent.com/4sMtbaCmQVjZ58dvt0JPgYFn8BRzA9BlbKNGnfAj9yo9mrmje0pcQylsRlnAJd-Ki56-"
+        },
+        {
+            "categoryName": "날씨",
+            "brandName": "날씨 앱 프로",
+            "brandImageUrl": "https://lh3.googleusercontent.com/euYCcy8GEDKfaE2fgQY4IoJQoZao0_Dlmua38W4k-cgsA4ci-4V-jiz9n8CXXBhzZc0"
+        },
+        {
+            "categoryName": "날씨",
+            "brandName": "원기날씨",
+            "brandImageUrl": "https://lh5.ggpht.com/xp1EEqn1mO7N4ROahZFYFbKN5blHf0j7twQLbGblRPNjMWwbx77b0AfYFeWcj_nNEE-0"
+        },
+        {
+            "categoryName": "데이트",
+            "brandName": "랜챗-랜덤채팅",
+            "brandImageUrl": "https://lh3.googleusercontent.com/REVetdNvDX0bet_CjfLcV5vXZFgfDZcJZpVRrczwAZf2uVi3rzoxCBchRekMjCZsvb6R"
+        },
+        {
+            "categoryName": "데이트",
+            "brandName": "채팅몬",
+            "brandImageUrl": "https://lh3.googleusercontent.com/qIFywkQaqt-NAv9yiX-_rAtF6FHVDQa-g791Ki2ZnzZbRUzt4HCABRPAo36VWLvqVtc"
+        },
+        {
+            "categoryName": "데이트",
+            "brandName": "글램 - 프리미엄 소개팅",
+            "brandImageUrl": "https://lh3.googleusercontent.com/3slFW1jrK1elOw6V1JSDcvho7_1xj029zYvvg0QveqUaF25m8wSENu1brYGkpSrj-mM"
+        },
+        {
+            "categoryName": "데이트",
+            "brandName": "스윗미 - 무제한 훈남 훈녀 소개팅",
+            "brandImageUrl": "https://lh3.googleusercontent.com/WyLLhzr6QZ0ynxJgJ2UoNIYAli_0CYecJ6I0LbliPA51ORCziKYWe5i2vTnO8-5boDY"
+        },
+        {
+            "categoryName": "데이트",
+            "brandName": "원나잇톡",
+            "brandImageUrl": "https://lh3.googleusercontent.com/uIAsMld-TGZts9vt8fwKX0SMPO3-95hlgZmXgOSCfCDpINQLjzzgc0IVCZuQSx7xNc1W"
+        },
+        {
+            "categoryName": "데이트",
+            "brandName": "저기요 - 소개팅 앱",
+            "brandImageUrl": "https://lh3.googleusercontent.com/_DnvGINDzj79QEPVGYabVSmAHzy0Y3xAUWh7bq0Svy2QWkm0ubVeFwK7QpI6ZCGYjw"
+        },
+        {
+            "categoryName": "동영상 플레이어",
+            "brandName": "nPlayer",
+            "brandImageUrl": "https://lh3.googleusercontent.com/u2xW-VIgj11c9VnJOrOl0CevZJOV8sDKCOmiefg8tvhxfDUF3IjTNYTycYJg8frfU8OT"
+        },
+        {
+            "categoryName": "동영상 플레이어",
+            "brandName": "MX 플레이어 Pro",
+            "brandImageUrl": "https://lh6.ggpht.com/t0m-wIs_wo9MHbcGYcNGr5VOF-h99jQ9LZgIppcGJXddAXDGUgbg8auXdtTVlEnlIg"
+        },
+        {
+            "categoryName": "동영상 플레이어",
+            "brandName": "KM플레이어 Pro",
+            "brandImageUrl": "https://lh3.googleusercontent.com/4yGOnyDlwPSIgwezE4Kin29yN6fMWBMrlvBOtlXjXOi2Tc5sG3l5d2Qbyz-a8sU3Lv0"
+        },
+        {
+            "categoryName": "동영상 플레이어",
+            "brandName": "곰플레이어",
+            "brandImageUrl": "https://lh6.ggpht.com/SQefr7hIBbgTWhX4n7o7xa5aMY1IBU_0G3qrrFm4q7NT-rOBSL2yu8WEMOl_3KyiTyhS"
+        },
+        {
+            "categoryName": "만화",
+            "brandName": "아라-만화뷰어",
+            "brandImageUrl": "https://lh4.ggpht.com/xrfo_Hd1oLjIkqg2HQ2-VVtJcn6wrABZtQbxKjy5kWVJDTcS2GJgw8q9a05EVhUP43Q"
+        },
+        {
+            "categoryName": "만화",
+            "brandName": "네이버 웹툰",
+            "brandImageUrl": "https://lh3.googleusercontent.com/_AiDaO0q3NSSoNN-D4zyRYzTokn3YHMz9iVdlpqTgLypsBr8RfPZsQN7ahlKicHrGQ"
+        },
+        {
+            "categoryName": "만화",
+            "brandName": "레진코믹스",
+            "brandImageUrl": "https://lh6.ggpht.com/E_vnZBLHPxXaucwPhZItEECXuFIENtEY6-Yol4MS5McNhFNtPVfIpU5uY5KRqp1-3g"
+        },
+        {
+            "categoryName": "만화",
+            "brandName": "다음 웹툰",
+            "brandImageUrl": "https://lh3.googleusercontent.com/P4QjRBFIIRQUT3K469ngdLsTydZnQU0v6YXSdtV7S8312elys1a99GTg7_P-v7ugezc"
+        },
+        {
+            "categoryName": "만화",
+            "brandName": "모두의 웹툰",
+            "brandImageUrl": "https://lh3.googleusercontent.com/N3eGrTt6gh01sMrxqx1-O6KFCw7POs3p9h_h2wjkC1eL0J5bO60FwOoHhcvl9rLXOg"
+        },
+        {
+            "categoryName": "만화",
+            "brandName": "코미코 - 웹툰",
+            "brandImageUrl": "https://lh3.googleusercontent.com/cuf15tWfvoka1Xu1kZ38hIaVUQdfqNTGtu7ADKL-5Ui3sb591oKoHOi_6foaFZ8PIg"
+        },
+        {
+            "categoryName": "생산성",
+            "brandName": "Samsung Forcus",
+            "brandImageUrl": "https://lh3.googleusercontent.com/mfwHjTjndXdwFTRgtwy8DjITcXkXJ7tMJeAvmvYm1eDNO3eWn4-vNyyL5BGMTIqWYKg"
+        },
+        {
+            "categoryName": "생산성",
+            "brandName": "Samsung Notes",
+            "brandImageUrl": "https://lh3.googleusercontent.com/AHIBhU2lZ42bKcFhfX8VSWeBOpcId9gtXmAVrzYe5ZjXfMVGckvgWnlueRF-z8akpm4m"
+        },
+        {
+            "categoryName": "생산성",
+            "brandName": "Samsung Flow",
+            "brandImageUrl": "https://lh3.googleusercontent.com/yezLnDql-McN1C1Ji9cPimc-5gePQ0-NStVk-qIfvFRl8m6vTkQR85ObBFSpRmdngSQ"
+        },
+        {
+            "categoryName": "생산성",
+            "brandName": "Caros 캘린더",
+            "brandImageUrl": "https://lh6.ggpht.com/MvMo4rXGyeozkm1PBJlm8ZW9ey1O3TVLnFCZhMtqzTAdrzkONagkdADnVZIOGOCBQYQ"
+        },
+        {
+            "categoryName": "생산성",
+            "brandName": "New Calendar",
+            "brandImageUrl": "https://lh3.googleusercontent.com/SbUjFy2CbIl-c_VbtF0XfBNdnGIlscoXuIhrH5KwPNC-QVKTO6CMpibcXR01KqINAw"
+        },
+        {
+            "categoryName": "생산성",
+            "brandName": "aCalendar",
+            "brandImageUrl": "https://lh3.googleusercontent.com/JWHQ46gHvS9NtHkSOBkn9TISKLBrOZriMw0qw1UGEzlYBdq4JLuc4gcnCMb4T8RPpwzz"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google Play 게임",
+            "brandImageUrl": "https://lh3.googleusercontent.com/UFJL7ni5i_F8V9Em0yymU4_x8uWhpKqDiA13Zo3ybgPJa48ujJjNfHLbvKr-3_MXzjLa"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google 번역",
+            "brandImageUrl": "https://lh3.googleusercontent.com/ZrNeuKthBirZN7rrXPN1JmUbaG8ICy3kZSHt-WgSnREsJzo2txzCzjIoChlevMIQEA"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "YouTube Music",
+            "brandImageUrl": "https://lh3.googleusercontent.com/PyHp7h1ae6xInrDLRjg5mmW0GiiQH4q0W2v5xv50vmOX7rtM4-xJ61WFMUXvc7_Xc6k"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google 포토",
+            "brandImageUrl": "https://lh5.ggpht.com/tq3WqEUxtRyBn-d_0t3j6WKNHuJDrmLq-FE3GAYrsAMQFIaS7FIgRLfzzql2SvfvLqto"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "YouTube Kids",
+            "brandImageUrl": "https://lh3.googleusercontent.com/k_HSvNKlleJNrzuL3OqDuXFm3Es8d77UQtiZvPqLg8lera9Xj99GRkDwWaJGMz8nkb1B"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google Play Music",
+            "brandImageUrl": "https://lh3.googleusercontent.com/gdBHEk-u3YRDtuCU3iDTQ52nZd1t4GPmldYaT26Jh6EhXgp1mlhQiuLFl4eXDAXzDig5"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google 캘린더",
+            "brandImageUrl": "https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google Play 뉴스스탠드",
+            "brandImageUrl": "https://lh3.googleusercontent.com/76AS8vaLwxcJMD5Yd8xW5Dy8AW8lloWa2AkP2cgUdCY6rlzeqcjIvrcxOvq3nNwxmofL"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "YouTube",
+            "brandImageUrl": "https://lh3.googleusercontent.com/Ned_Tu_ge6GgJZ_lIO_5mieIEmjDpq9kfgD05wapmvzcInvT4qQMxhxq_hEazf8ZsqA"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google Play 무비",
+            "brandImageUrl": "https://lh3.googleusercontent.com/EamensCSpActl8Y0uOxXOUSVHUBJOc4N3Lsp0OU0oMNBa9GU2JVmp1HWU9fyTWvMQQ"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google Play 북",
+            "brandImageUrl": "https://lh3.googleusercontent.com/DglqS-eYHQYXnj8M8tmzh3JcKDXcidSo3IzgyCZzci8ZTV9Pmuk8vvIFh9XHOztC3Q"
+        },
+        {
+            "categoryName": "Google",
+            "brandName": "Google Home",
+            "brandImageUrl": "https://lh3.googleusercontent.com/EIX5pscg5l1Quvsz17LKk6W5oCSIxOfukBAUmbGR4Uvs1uKDYvbNr0XYE7hqpI3KHQ"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "PAYCO",
+            "brandImageUrl": "https://lh3.googleusercontent.com/DGIx1chQ0FHVO19xFYwiV1ffKAA6rA0h7woRoZR7Eg5qpEFDlhfk-G7ynSz-YQ0eK5cS"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "한게임 포커",
+            "brandImageUrl": "https://lh3.googleusercontent.com/Rp_DrHUAt2FpYeDDXeMHBHcdnLK9Dr3B2aiywSan9slAgXECyyhOMhzO6VSCnYnPvQ"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "한게임 섯다",
+            "brandImageUrl": "https://lh3.googleusercontent.com/8iPOMI6rKQzkXJXku2atlvzmEK3OMf7PfwsrV3AR4j5Viry29HlHGhvThpfKSdtVXzs"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "한게임 슬롯",
+            "brandImageUrl": "https://lh3.googleusercontent.com/sYpPBTB-JJDXBSI06kBuaICHdgOa8HxU9DUTeX97DRn9oABPLEb0CtItPGIjxDUy-m0"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "한게임 사천성",
+            "brandImageUrl": "https://lh3.ggpht.com/OX9K7KumZji1IsATM6LURneNZDYV9ShamUf3sEh1G9_5JoVvJqaOD2PYsmwhLRhrp-Q"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "유니원 학부모용",
+            "brandImageUrl": "https://lh3.googleusercontent.com/eKjUjOkRfP0ifBOdiIuHMeXYeQiig9VYRVIBv2PvheUar7rJBo-7BTy2gTR4jhs_WQ"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "유니원 학원용",
+            "brandImageUrl": "https://lh3.googleusercontent.com/3LCl_thMAQN-GhrBFXje13nnGxQc73uP1SjN8vXcIag3xh1zkeh8kM7FnnfEPMg6sVLr"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "PAYCO Place Shop",
+            "brandImageUrl": "https://lh3.googleusercontent.com/uaucBycNkzeBSn0eyQMi2_rtvKYVEM0KYhbgYYv7jx6MRHX6VuAQtljM3iaNya1Gx48"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "토스트 앳",
+            "brandImageUrl": "https://lh3.googleusercontent.com/Bs5nf8YX8X86IbTpQx-VOdPgrjTGVRl_W3MAcJHtN22t_GxWKA-G4Cy61kmn7KmE5Rg"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "토스트 드라이브",
+            "brandImageUrl": "https://lh3.googleusercontent.com/QYZc0W-4sv8330dLJ79ZsL6IUlGLxUIJQyuzaXvPXqm6uP7Gy95x5ZvrHWFYhrGpsypY"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "Dooray! - 두레이",
+            "brandImageUrl": "https://lh3.googleusercontent.com/WQhZRpEBqlEaIJBsRlzmrHvDxFnwaXXh15FgyDs4uAkQYBkacgafaqatsN8hZxBt3A"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "Dooray! Messenger",
+            "brandImageUrl": "https://lh3.googleusercontent.com/-HME5K_335cH0JG2_2gqiE2CAOS5SxrdjSZfL2eEhJDdGxiHxn1gD8ZjnbR2f4G_KA"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "PAYCO 가맹점 계약",
+            "brandImageUrl": "https://lh3.googleusercontent.com/1M33vNCU2ofLQrPhuvHaj-ok6lceGRiOUMo8TgBQTChQZA1Vyz79gHNRoSuCqny0I7Wy"
+        },
+        {
+            "categoryName": "NHN Entertainment",
+            "brandName": "토스트캠 비즈",
+            "brandImageUrl": "https://lh3.googleusercontent.com/NsphfxUrY9pGelLrtfhwia4wowTfzqtY8xHMr9dN1dm6KJEmbszVyZ3V_Vi4c2-2Ans"
+        }
+    ]
+}
