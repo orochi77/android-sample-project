@@ -11,5 +11,5 @@ import java.util.List;
 public interface OnSearchWordListener {
 
     void filterBrandList(List<Brand> brandList);
-
+    void changedSearchWord(String searchWord);
 }

@@ -1,6 +1,7 @@
 package com.tangbba.androidsampleproject.adapter;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,7 @@ import com.tangbba.androidsampleproject.OnSearchWordListener;
 import com.tangbba.androidsampleproject.R;
 import com.tangbba.androidsampleproject.model.Brand;
 import com.tangbba.androidsampleproject.model.BrandRepository;
+import com.tangbba.androidsampleproject.utils.StringUtil;
 
 import java.util.List;
 
@@ -68,7 +70,7 @@ public class BrandRecyclerViewAdapter extends RecyclerView.Adapter<BrandRecycler
         return mSearchWord;
     }
 
-    public void setSearchWord(String searchWord) {
+    private void setSearchWord(String searchWord) {
         mSearchWord = searchWord;
     }
 
@@ -76,6 +78,11 @@ public class BrandRecyclerViewAdapter extends RecyclerView.Adapter<BrandRecycler
         @Override
         public void filterBrandList(List<Brand> brandList) {
             setDataProvider(brandList);
+        }
+
+        @Override
+        public void changedSearchWord(String searchWord) {
+            setSearchWord(searchWord);
         }
     };
 
@@ -97,8 +104,13 @@ public class BrandRecyclerViewAdapter extends RecyclerView.Adapter<BrandRecycler
 
         public void setBrand(Brand brand) {
             mBrand = brand;
-            mBrandNameTextView.setText(brand.getBrandName());
-            Log.d("ViewHolder", brand.getBrandImageUrl());
+
+            if (mSearchWord == null || mSearchWord.isEmpty()) {
+                mBrandNameTextView.setText(brand.getBrandName());
+            } else {
+                mBrandNameTextView.setText(StringUtil.getHighlightText(brand.getBrandName(), mSearchWord, ContextCompat.getColor(mContext, R.color.colorAccent)));
+            }
+
             Picasso.with(mContext)
                     .load(mBrand.getBrandImageUrl())
                     .placeholder(R.drawable.place_holder_drawable)

@@ -45,8 +45,10 @@ public class BrandRepository {
         mSearchWord = searchWord;
         if (mOnSearchWordListener != null) {
             if (searchWord.isEmpty()) {
+                mOnSearchWordListener.changedSearchWord("");
                 mOnSearchWordListener.filterBrandList(mAllBrandList);
             } else {
+                mOnSearchWordListener.changedSearchWord(mSearchWord);
                 List<Brand> filteredBrandList = new ArrayList<>(Collections2.filter(mAllBrandList, new Predicate<Brand>() {
                     @Override
                     public boolean apply(Brand input) {
