@@ -1,6 +1,7 @@
 package com.tangbba.androidsampleproject.adapter;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,7 +37,8 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-
+        String categoryName = mDataProvider.get(position);
+        holder.setCategoryName(categoryName);
     }
 
     @Override
@@ -60,6 +62,15 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
         mOnCategoryItemListener = onCategoryItemListener;
     }
 
+    public String getSelectedCategoryName() {
+        return mSelectedCategoryName;
+    }
+
+    public void setSelectedCategoryName(String selectedCategoryName) {
+        mSelectedCategoryName = selectedCategoryName;
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView mCategoryNameTextView;
@@ -68,6 +79,7 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
         public ViewHolder(View itemView) {
             super(itemView);
             mCategoryNameTextView = (TextView) itemView.findViewById(R.id.category_name_text_view);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -76,6 +88,7 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
                     }
 
                     if (getOnCategoryItemListener() != null) {
+                        setSelectedCategoryName(mCategoryName);
                         getOnCategoryItemListener().onClickCategoryItem(mCategoryName);
                     }
                 }
@@ -88,6 +101,15 @@ public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRe
 
         public void setCategoryName(String categoryName) {
             mCategoryName = categoryName;
+            mCategoryNameTextView.setText(categoryName);
+            if (mSelectedCategoryName == null) {
+                return;
+            }
+            if (mSelectedCategoryName.equals(mCategoryName)) {
+                mCategoryNameTextView.setTextColor(ContextCompat.getColor(mContext, R.color.colorAccent));
+            } else {
+                mCategoryNameTextView.setTextColor(ContextCompat.getColor(mContext, R.color.gray_282828));
+            }
         }
     }
 
