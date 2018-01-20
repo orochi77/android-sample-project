@@ -18,5 +18,4 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="clearButtonDrawable">@drawable/ic_erase</item>
     </style>
-
 </resources>
