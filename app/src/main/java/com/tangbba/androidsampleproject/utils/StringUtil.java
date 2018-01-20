@@ -15,7 +15,7 @@ public class StringUtil {
             return new SpannableStringBuilder(originalText);
         }
 
-        int startIndex = originalText.indexOf(highlightText);
+        int startIndex = originalText.toLowerCase().indexOf(highlightText.toLowerCase());
 
         if (startIndex == -1) {
             return new SpannableStringBuilder(originalText);

@@ -52,7 +52,7 @@ public class BrandRepository {
                 List<Brand> filteredBrandList = new ArrayList<>(Collections2.filter(mAllBrandList, new Predicate<Brand>() {
                     @Override
                     public boolean apply(Brand input) {
-                        return input.getBrandName().contains(mSearchWord);
+                        return input.getBrandName().toLowerCase().contains(mSearchWord.toLowerCase());
                     }
                 }));
                 mOnSearchWordListener.filterBrandList(filteredBrandList);
