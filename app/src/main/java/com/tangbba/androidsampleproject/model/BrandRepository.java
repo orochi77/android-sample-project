@@ -21,6 +21,7 @@ public class BrandRepository {
     private Context mContext;
     private List<Brand> mAllBrandList = new ArrayList<>();
     private String mSearchWord = "";
+    private String mSelectedCategory = "전체";
 
     private OnSearchWordListener mOnSearchWordListener;
 
@@ -46,7 +47,17 @@ public class BrandRepository {
         if (mOnSearchWordListener != null) {
             if (searchWord.isEmpty()) {
                 mOnSearchWordListener.changedSearchWord("");
-                mOnSearchWordListener.filterBrandList(mAllBrandList);
+                if (mSelectedCategory.equals("전체")) {
+                    mOnSearchWordListener.filterBrandList(mAllBrandList);
+                } else {
+                    List<Brand> categoryFilteredBrandList = new ArrayList<>(Collections2.filter(mAllBrandList, new Predicate<Brand>() {
+                        @Override
+                        public boolean apply(Brand input) {
+                            return input.getCategoryName().equals(mSelectedCategory);
+                        }
+                    }));
+                    mOnSearchWordListener.filterBrandList(categoryFilteredBrandList);
+                }
             } else {
                 mOnSearchWordListener.changedSearchWord(mSearchWord);
                 List<Brand> filteredBrandList = new ArrayList<>(Collections2.filter(mAllBrandList, new Predicate<Brand>() {
@@ -69,5 +80,30 @@ public class BrandRepository {
 
     public void setOnSearchWordListener(OnSearchWordListener onSearchWordListener) {
         mOnSearchWordListener = onSearchWordListener;
+    }
+
+    public String getSelectedCategory() {
+        return mSelectedCategory;
+    }
+
+    public void setSelectedCategory(String selectedCategory) {
+        if (selectedCategory.equals(mSelectedCategory)) {
+            return;
+        }
+        mSelectedCategory = selectedCategory;
+
+        if (mSelectedCategory.equals("전체")) {
+            mOnSearchWordListener.filterBrandList(mAllBrandList);
+        } else {
+            List<Brand> categoryFilteredBrandList = new ArrayList<>(Collections2.filter(mAllBrandList, new Predicate<Brand>() {
+                @Override
+                public boolean apply(Brand input) {
+                    return input.getCategoryName().equals(mSelectedCategory);
+                }
+            }));
+            mOnSearchWordListener.filterBrandList(categoryFilteredBrandList);
+        }
+
+
     }
 }

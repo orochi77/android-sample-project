@@ -12,7 +12,8 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        tools:src="@tools:sample/avatars"/>
 
     <TextView
         android:id="@+id/brand_name_text_view"

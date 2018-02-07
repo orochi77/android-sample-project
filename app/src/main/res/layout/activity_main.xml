@@ -30,14 +30,16 @@
             android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 
-    <com.tangbba.androidsampleproject.widget.CateogryView
+    <com.tangbba.androidsampleproject.widget.CategoryView
         android:id="@+id/category_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item"/>
 
 </LinearLayout>

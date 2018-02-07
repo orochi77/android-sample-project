@@ -17,7 +17,7 @@ import com.tangbba.androidsampleproject.model.Category;
  * Created by orochi77 on 2018-01-20.
  */
 
-public class CateogryView extends LinearLayout {
+public class CategoryView extends LinearLayout {
 
     private static final String TAG = "CategoryRecyclerView";
 
@@ -27,15 +27,15 @@ public class CateogryView extends LinearLayout {
     private GridLayoutManager mGridLayoutManager;
     private OnCategoryListener mOnCategoryListener;
 
-    public CateogryView(Context context) {
+    public CategoryView(Context context) {
         this(context, null);
     }
 
-    public CateogryView(Context context, @Nullable AttributeSet attrs) {
+    public CategoryView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CateogryView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public CategoryView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initializeView();
     }
@@ -65,6 +65,7 @@ public class CateogryView extends LinearLayout {
             }
         });
         mRecyclerView.setAdapter(mAdapter);
+        mAdapter.setSelectedCategoryName("전체");
         requestLayout();
     }
 

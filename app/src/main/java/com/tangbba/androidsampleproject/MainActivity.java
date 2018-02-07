@@ -20,6 +20,7 @@ import com.tangbba.androidsampleproject.model.BrandRepository;
 import com.tangbba.androidsampleproject.tasks.DataLoaderAsyncTask;
 import com.tangbba.androidsampleproject.utils.KeyboardUtil;
 import com.tangbba.androidsampleproject.widget.BrandSearchView;
+import com.tangbba.androidsampleproject.widget.CategoryView;
 import com.tangbba.androidsampleproject.widget.ClearEditText;
 
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private BrandRecyclerViewAdapter mAdapter;
     private GridLayoutManager mGridLayoutManager;
+    private CategoryView mCategoryView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         });
         mDataLoaderAsyncTask.execute();
         setupSearchView();
+        setupCategoryView();
         setupFocusProcess(mRootView);
     }
 
@@ -62,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
         mRootView = findViewById(R.id.root_view);
         mSearchView = (BrandSearchView) findViewById(R.id.search_view);
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mCategoryView = (CategoryView) findViewById(R.id.category_view);
+    }
+
+    private void setupCategoryView() {
+        mCategoryView.setOnCategoryListener(mCategoryListener);
     }
 
     private void setupRecyclerView() {
@@ -127,8 +135,25 @@ public class MainActivity extends AppCompatActivity {
     private BrandSearchView.OnSearchViewTextChangeListener mSearchViewTextChangeListener = new BrandSearchView.OnSearchViewTextChangeListener() {
         @Override
         public void onChangeText(CharSequence s) {
+            if (s.length() > 0) {
+                mCategoryView.setVisibility(View.GONE);
+            } else {
+                mCategoryView.setVisibility(View.VISIBLE);
+            }
+
             String searchWord = s.toString();
             mBrandRepository.setSearchWord(searchWord);
+        }
+    };
+
+    private CategoryView.OnCategoryListener mCategoryListener = new CategoryView.OnCategoryListener() {
+        @Override
+        public void onSelectCategoryName(String categoryName) {
+            if (mBrandRepository == null) {
+                return;
+            }
+
+            mBrandRepository.setSelectedCategory(categoryName);
         }
     };
 
