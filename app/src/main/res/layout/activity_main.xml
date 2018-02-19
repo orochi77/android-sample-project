@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.tangbba.androidsampleproject.MainActivity">
 
-    <TextView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="238dp"
+        android:background="@android:color/black">
+
+        <View
+            android:id="@+id/hero_background_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_edge_round_rect"/>
+
+        <View
+            android:id="@+id/separator_line_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="60dp"
+            android:alpha="0.15"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/primary_color_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:text="primary color"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/accent_color_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="accent color"/>
+
+    <Button
+        android:id="@+id/color_animation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="color animation"/>
+
+</LinearLayout>
