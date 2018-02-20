@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="146dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/tab_image_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        tools:src="@tools:sample/avatars"/>
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tab_label_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        tools:text="TAB"/>
+
+</LinearLayout>
