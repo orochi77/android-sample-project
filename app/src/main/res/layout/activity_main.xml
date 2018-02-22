@@ -42,9 +42,9 @@
         android:text="accent color"/>
 
     <Button
-        android:id="@+id/color_animation_button"
+        android:id="@+id/open_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="color animation"/>
+        android:text="Open List Activity"/>
 
 </LinearLayout>

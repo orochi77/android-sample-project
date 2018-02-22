@@ -31,13 +31,8 @@ public class DrawableUtil {
         Drawable originalDrawable;
         int tintColor;
 
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-            originalDrawable = context.getResources().getDrawable(drawableRes);
-            tintColor = context.getResources().getColor(colorRes);
-        } else {
-            originalDrawable = context.getResources().getDrawable(drawableRes, context.getTheme());
-            tintColor = context.getResources().getColor(colorRes, context.getTheme());
-        }
+        originalDrawable = ContextCompat.getDrawable(context, drawableRes);
+        tintColor = ContextCompat.getColor(context, colorRes);
 
         Drawable wrapDrawable = DrawableCompat.wrap(originalDrawable);
         DrawableCompat.setTint(wrapDrawable, tintColor);
@@ -45,6 +40,23 @@ public class DrawableUtil {
         return wrapDrawable;
 
     }
+
+    public static Drawable setTintColorWithMutate(Context context, int drawableRes, int colorRes) {
+
+        Drawable originalDrawable;
+        int tintColor;
+
+        originalDrawable = ContextCompat.getDrawable(context, drawableRes);
+        tintColor = ContextCompat.getColor(context, colorRes);
+
+        Drawable wrapDrawable = DrawableCompat.wrap(originalDrawable).mutate();
+        DrawableCompat.setTint(wrapDrawable, tintColor);
+
+        return wrapDrawable;
+
+    }
+
+
 
     /**
      * 지정한 뷰의 배경을 duration동안 지정한 컬러로 애니메이션 하는 메소드

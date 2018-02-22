@@ -1,5 +1,6 @@
 package com.tangbba.androidsampleproject;
 
+import android.content.Intent;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,16 +42,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.color_animation_button).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.open_activity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DrawableUtil.animationBackgroundColor(
-                        MainActivity.this,
-                        findViewById(R.id.hero_background_view),
-                        R.color.colorPrimary,
-                        R.color.colorAccent,
-                        500
-                );
+                Intent intent = ListActivity.newIntent(MainActivity.this);
+                startActivity(intent);
             }
         });
     }
