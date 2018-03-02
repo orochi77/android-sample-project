@@ -21,8 +21,10 @@
     </FrameLayout>
     <TextView
         android:id="@+id/tab_label_text_view"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="46dp"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:gravity="center"
         tools:text="TAB"/>
 

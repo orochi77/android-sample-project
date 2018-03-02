@@ -71,4 +71,7 @@ public class LabelTabView extends LinearLayout {
         updateView();
     }
 
+    public TextView getLabelTextView() {
+        return mLabelTextView;
+    }
 }

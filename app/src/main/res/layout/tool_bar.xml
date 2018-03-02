@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp"
+        android:background="@android:color/darker_gray">
+
+        <LinearLayout
+            android:id="@+id/gift_shop_brand_home_title_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:id="@+id/up_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_box_black_24dp" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/title_text_view"
+                tools:text="Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorAccent"
+                android:textSize="16dp" />
+
+            <FrameLayout
+                android:id="@+id/title_view_search_button"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/title_view_close_button"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_box_black_24dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/title_view_close_button"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="5dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_box_black_24dp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="bottom"
+            android:alpha="0.1"
+            android:background="#000000" />
+
+    </FrameLayout>
+</LinearLayout>
