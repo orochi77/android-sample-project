@@ -38,7 +38,7 @@ public class BottomSheetBasicActivity extends Activity {
         mBottomSheet = findViewById(R.id.bottom_sheet);
         mCoverView = findViewById(R.id.cover_view);
         mBottomSheetBehavior = AnchoredBottomSheetBehavior.from(mBottomSheet);
-        mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_ANCHORED);
+        mBottomSheetBehavior.setState(AnchoredBottomSheetBehavior.STATE_COLLAPSED);
         setupButtonEvent();
         setupBottomSheetEvent();
 
@@ -54,7 +54,7 @@ public class BottomSheetBasicActivity extends Activity {
             @Override
             public void onSlide(@NonNull View bottomSheet, float slideOffset) {
                 if (slideOffset > 0) {
-                    mCoverView.setVisibility(View.VISIBLE);
+                    mCoverView.setVisibility(View.GONE);
                 } else {
                     mCoverView.setVisibility(View.GONE);
                 }
