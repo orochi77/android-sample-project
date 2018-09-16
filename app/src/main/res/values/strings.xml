@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AndroidSampleProject</string>
+    <string name="add_pin_shortcut_button_label">Add Pin Shortcut</string>
+    <string name="google_sans_medium">Google Sans Medium</string>
+    <string name="offline_payment">오프라인결제</string>
 </resources>

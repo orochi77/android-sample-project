@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="PinedShortcut"
+        android:enabled="true"
+        android:icon="@mipmap/ic_offline_payment"
+        android:shortcutShortLabel="@string/offline_payment"
+        android:shortcutLongLabel="@string/offline_payment">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tangbba.androidsampleproject"
+            android:targetClass="com.tangbba.androidsampleproject.activity.PinedShortcutActivity"/>
+        <!--<categories android:name="android.shortcut.conversation" />-->
+    </shortcut>
+</shortcuts>
