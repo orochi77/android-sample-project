@@ -3,4 +3,5 @@
     <string name="add_pin_shortcut_button_label">Add Pin Shortcut</string>
     <string name="google_sans_medium">Google Sans Medium</string>
     <string name="offline_payment">오프라인결제</string>
+    <string name="meal_ticket">식권</string>
 </resources>
