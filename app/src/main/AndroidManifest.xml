@@ -30,7 +30,7 @@
 
         <activity android:name=".activity.WidgetLaunchedActivity"
             android:label="@string/meal_ticket"
-            android:icon="@mipmap/ic_meal_ticket">
+            android:icon="@mipmap/ic_shortcut_meal_ticket">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="android.intent.action.CREATE_SHORTCUT"/>

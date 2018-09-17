@@ -27,7 +27,7 @@ public class WidgetLaunchedActivity extends AppCompatActivity {
             ShortcutInfoCompat shortcutInfoCompat = new ShortcutInfoCompat.Builder(this, "mealTicketWidget")
                     .setShortLabel(getString(R.string.meal_ticket))
                     .setLongLabel(getString(R.string.meal_ticket))
-                    .setIcon(IconCompat.createWithResource(this, R.mipmap.ic_meal_ticket))
+                    .setIcon(IconCompat.createWithResource(this, R.mipmap.ic_shortcut_meal_ticket))
                     .setIntent(intent)
                     .build();
 

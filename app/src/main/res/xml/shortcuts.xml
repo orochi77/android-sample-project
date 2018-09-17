@@ -4,7 +4,7 @@
     <shortcut
         android:shortcutId="PinedShortcut"
         android:enabled="true"
-        android:icon="@mipmap/ic_offline_payment"
+        android:icon="@mipmap/ic_shortcut_offline_payment"
         android:shortcutShortLabel="@string/offline_payment"
         android:shortcutLongLabel="@string/offline_payment">
         <intent

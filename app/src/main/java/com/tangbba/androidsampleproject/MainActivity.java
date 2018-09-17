@@ -7,12 +7,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.AdaptiveIconDrawable;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.pm.ShortcutInfoCompat;
 import android.support.v4.content.pm.ShortcutManagerCompat;
-import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v4.graphics.drawable.IconCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +18,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.tangbba.androidsampleproject.activity.PinedShortcutActivity;
-import com.tangbba.androidsampleproject.util.DrawableUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,18 +41,18 @@ public class MainActivity extends AppCompatActivity {
                 final Intent intent = new Intent(ACTION_PIN_SHORTCUT_ACCEPTED);
                 intent.setComponent(new ComponentName(context, PinedShortcutActivity.class));
 
-                Drawable foreground = ContextCompat.getDrawable(context, R.mipmap.ic_shortcut_offlinepayment_foreground);
+                Drawable foreground = ContextCompat.getDrawable(context, R.mipmap.ic_shortcut_offline_payment_foreground);
                 Drawable background = ContextCompat.getDrawable(context, R.color.ic_shortcut_background);
 
                 AdaptiveIconDrawable adaptiveIconDrawable = new AdaptiveIconDrawable(background, foreground);
 
-                Bitmap iconBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_shortcut_offlinepayment_foreground);
+                Bitmap iconBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_shortcut_offline_payment_foreground);
 
                 ShortcutInfoCompat shortcutInfoCompat = new ShortcutInfoCompat.Builder(context, "PinedShortcut")
                         .setShortLabel(getString(R.string.offline_payment))
                         .setLongLabel(getString(R.string.offline_payment))
 //                        .setIcon(IconCompat.createWithAdaptiveBitmap(iconBitmap))
-                        .setIcon(IconCompat.createWithResource(context, R.mipmap.ic_offline_payment))
+                        .setIcon(IconCompat.createWithResource(context, R.mipmap.ic_shortcut_offline_payment))
 //                        .setIcon(IconCompat.createWithAdaptiveBitmap(DrawableUtil.drawableToBitmap(adaptiveIconDrawable)))
                         .setIntent(intent)
                         .build();
